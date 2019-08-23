@@ -1,0 +1,47 @@
+body {
+    background: white;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#profile-img {
+    width: 200px;
+    height: auto;
+    margin: 20px auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+#projects {
+    margin: 0 auto;
+}
+
+div.row {
+    margin: 0 auto;
+}
+
+li.nav-li {
+    margin: 0 15px;
+}
+
+p.paragraph {
+    text-align: left
+}
+
+i.icon {
+    text-align: center;
+    background-color: blanchedalmond;
+    margin: 0 15px;
+    color: blue;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    clear: both;
+}

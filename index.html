@@ -5,15 +5,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Font Awesome -->
+    <!-- <script src="https://kit.fontawesome.com/6c3926187e.js"></script> -->
+    <link rel="stylesheet" href="./assets/styles.css">
     <title>Markus Markowich</title>
 </head>
 
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Markus Markowich</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li class="nav-li about">About</li>
+                <li class="nav-li story">My Story</li>
+                <li class="nav-li portfolio">My Portfolio</li>
+                <li class="nav-li contact">Contact</li>
+            </ul>
+        </div>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li class="nav-li story">About</li>
+            <li class="nav-li about">My Story</li>
+            <li class=" nav-li portfolio">Portfolio</li>
+            <li class="nav-li contact">Contact</li>
+        </ul>
+
+    </nav>
+    <div class="container">
+
+
+        <div class="row about-div">
+
+            <div id="profile-img" class=""><img src="./assets/images/me.jpg" alt="" class="circle"></div>
+
+            <div class="row center-align">
+                <div class="col s4 m4 l4 icon-div">
+                    <i class="large material-icons icon circle">code</i>
+                    <h3>Fullstack</h3>
+                </div>
+                <div class="col s4 m4 l4 icon-div">
+                    <i class="large material-icons icon circle">show_chart</i>
+                    <h3>Bussiness</h3>
+                </div>
+                <div class="col s4 m4 l4 icon-div">
+                    <i class="large material-icons icon circle">bubble_chart</i>
+                    <h3>Scicence</h3>
+                </div>
+            </div>
+
+
+
+            <p class="paragraph col s12 m12 l12">
+                Thank you Granda, for getting up at 6 in the morning to wait in line for two hours at the local
+                grocery discounter to buy my first cutting edge PC which clearly was far from putting it in your
+                pocket and carrying it around. When the store opened they typically had 5 units … Grandpa was number
+                6. This happened in 2004 and was probably the first of many hurdles I had to overcome to pursue a
+                career in web and development. Luckily on the second attempt a couple months later I got my <a
+                    href="https://www.pcwelt.de/produkte/Im-Test-Aldi-PC-Medion-Titanium-MD-8383-XL-390310.html"
+                    target="_blank" class="text_link">Titanium MD 8383 XL</a> and I started teaching myself how to
+                build first simple website, at the time not realising how much I enjoyed it and to make it a career.
+                <br>
+                <br>
+                Instead I did quite a view different things in my life: form working in healthcare to getting a MSc.
+                degree and working in agriculture, ending up in sales and product management for a startup - wich
+                was amazing - to customer support roles. All of these job provided me with wonderful experiences but
+                never brought back the enjoyment of coding and teaching myself new skills on my old dinosaur Windows
+                XP machine. Realizing, how much sooner I could have found the ideal career for me I started to take
+                action and setting my goal for the year 2020:
+                <br>
+                <br>
+                “I am making websites” - that’s what I want to tell people about me. My name is Markus and here you
+                can see the first steps towards my goal of become a professional web developer.
+                You should do this! These were my words to my family when I decided to go on my exciting journey to
+                become a developer and to finally start doing for living what I am actually enjoying. The day after,
+                I registered for a coding bootcamp at UNH - and look at me: You’re currently visiting my very first
+                serious project which of course will be a work in progress. Feel free to check out my projects and
+                my development as I move forward.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row portfolio-div">
+            <div class=" col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/giftastic.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">GifTastic</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/markus902/UNH-07-GifTastic">See on GitHub</a><br>
+                        <a href="https://markus902.github.io/UNH-07-GifTastic/">See in Browser</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/rockPaperScissors.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Rock-Paper-Scissors Multiplayer</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/markus902/UNH-08-Rock-Paper-Scissors">See on GitHub</a><br>
+                        <a href="https://markus902.github.io/UNH-08-Rock-Paper-Scissors/">See in Browser</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/trivia.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Trivia</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/markus902/UNH-06-Trivia">See on GitHub</a><br>
+                        <a href="https://markus902.github.io/UNH-06-Trivia/">See in Browser</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6 l3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./assets/images/wordGuessGame.png">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title">Word-Guess-Game</span>
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                            I am convenient because I require little markup to use effectively.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://github.com/markus902/UNH-04-Word-Guess-Game">See on GitHub</a><br>
+                        <a href="https://markus902.github.io/UNH-04-Word-Guess-Game/">See in Browser</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">More Info</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">GitHub</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2019 Markus Markowich
+
+            </div>
+        </div>
+    </footer>
+    </div>
+
+
+
+    <script src="./assets/javascript.js"></script>
 
 </body>
+
 
 </html>
