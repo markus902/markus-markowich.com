@@ -5,6 +5,7 @@ $(document).ready(function () {
     $('.sidenav').sidenav(); // Materialize sidenav
 
     $(".about-div").css("display", "");
+    $(".story-div").css("display", "none");
     $(".portfolio-div").css("display", "none");
     $(".contact-div").css("display", "none");
 
@@ -14,6 +15,7 @@ $(document).ready(function () {
         setTimeout(
             () => {
                 $(".about-div").removeClass("animated fadeIn fadeOut fast");
+                $(".story-div").removeClass("animated fadeIn fadeOut fast");
                 $(".portfolio-div").removeClass("animated fadeIn fadeOut fast");
                 $(".contact-div").removeClass("animated fadeIn fadeOut fast");
             }, 800);
@@ -25,19 +27,30 @@ $(document).ready(function () {
 
     $(".about").on("click", function () {
         $(".about-div").css("display", "").addClass("animated fadeIn fast");
+        $(".story-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
+        resetClasses();
+    });
+    $(".story").on("click", function () {
+        $(".about-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".story-div").css("display", "").addClass("animated fadeIn fast");
         $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
         $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
         resetClasses();
     });
     $(".portfolio").on("click", function () {
         $(".about-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".story-div").css("display", "none").addClass("animated fadeOut fast");
         $(".portfolio-div").css("display", "").addClass("animated fadeIn fast");
         $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
         resetClasses();
     });
     $(".contact").on("click", function () {
-        $(".about-div").css("display", "none");
-        $(".portfolio-div").css("display", "none");
-        $(".contact-div").css("display", "");
+        $(".about-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".story-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
+        $(".contact-div").css("display", "").addClass("animated fadeIn fast");
+        resetClasses();
     })
 });

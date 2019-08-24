@@ -19,11 +19,21 @@ img {
     margin: 0 auto;
 }
 
-div.row {
+div.content-row {
     margin: 0 auto;
+    /* height: 100%; */
 }
 
+/* div.container {
+    height: 100%;
+} */
+
 li.nav-li {
+    margin: 0 15px;
+}
+
+li.nav-li2 {
+    color: black;
     margin: 0 15px;
 }
 
@@ -42,6 +52,14 @@ h3 {
     font-size: 1.5rem;
 }
 
-p {
-    clear: both;
+img.arrow {
+    float: right;
+    max-width: 50%;
+    margin: 20px;
+}
+
+.logo {
+    width: 20px;
+    float: left;
+    margin-bottom: 20px;
 }
