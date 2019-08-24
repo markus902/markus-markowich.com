@@ -1,5 +1,13 @@
 body {
-    background: white;
+    height: 100vh;
+    background: rgb(158, 153, 151);
+    /* background: url("./images/pc.jpg"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+div.background {
+    position: absolute;
 }
 
 img {
@@ -21,15 +29,22 @@ img {
 
 div.content-row {
     margin: 0 auto;
-    /* height: 100%; */
+    height: 100vh;
+    position: relative;
+
 }
 
-/* div.container {
-    height: 100%;
-} */
+div.center {
+    position: relative;
+}
 
 li.nav-li {
     margin: 0 15px;
+}
+
+div.nav-row {
+    position: absolute;
+    background: none;
 }
 
 li.nav-li2 {
@@ -52,14 +67,18 @@ h3 {
     font-size: 1.5rem;
 }
 
-img.arrow {
-    float: right;
-    max-width: 50%;
-    margin: 20px;
-}
-
 .logo {
     width: 20px;
     float: left;
     margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    /* border: 3px solid black; */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    top: 30;
+    width: max-content;
 }
