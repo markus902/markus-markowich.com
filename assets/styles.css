@@ -41,6 +41,7 @@ li.nav-li2 {
 
 p.paragraph {
     margin: 20px 100px;
+    padding: 10px;
     background-color: whitesmoke;
     color: gray;
     text-align: left;
@@ -104,7 +105,7 @@ div.projects-div {
 
 div.story-div {
     margin-bottom: 100px;
-    background: url("./images/arrow.jpg") center;
+    /* background: url("./images/arrow.jpg") center; */
     overflow: hidden;
     height: max-content;
     padding: 0
