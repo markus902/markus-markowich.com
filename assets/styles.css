@@ -167,3 +167,16 @@ img.footer-icon {
 #headline2 {
     text-align: center;
 }
+
+
+@media screen and (max-width: 768px) {
+    div.technology-div {
+        height: max-content;
+    }
+
+    .skill-list2 {
+        margin: 0 30px !important;
+        white-space: nowrap;
+    }
+
+}
