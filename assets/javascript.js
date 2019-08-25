@@ -1,55 +1,57 @@
-$(".profile-img").css("display", "none").addClass("bounce infinite fast");
-
-
 $(document).ready(function () {
-    $('.sidenav').sidenav(); // Materialize sidenav
 
-    $(".about-div").css("display", "none");
-    $(".story-div").css("display", "none");
-    $(".portfolio-div").css("display", "none");
-    $(".contact-div").css("display", "none");
+    //detection if links on top are in viewport
+    function isOnScreen(elem) {
+        // if the element doesn't exist, abort
+        if (elem.length == 0) {
+            return;
+        }
+        var $window = jQuery(window)
+        var viewport_top = $window.scrollTop()
+        var viewport_height = $window.height()
+        var viewport_bottom = viewport_top + viewport_height
+        var $elem = jQuery(elem)
+        var top = $elem.offset().top
+        var height = $elem.height()
+        var bottom = top + height
 
-    //Click events for nav bar links
-    // function resetClasses() {
+        return (top >= viewport_top && top < viewport_bottom) ||
+            (bottom > viewport_top && bottom <= viewport_bottom) ||
+            (height > viewport_height && top <= viewport_top && bottom >= viewport_bottom)
+    }
 
-    setTimeout(
-        () => {
-            $(".about-div").removeClass("animated fadeIn fadeOut fast");
-            $(".story-div").removeClass("animated fadeIn fadeOut fast");
-            $(".portfolio-div").removeClass("animated fadeIn fadeOut fast");
-            $(".contact-div").removeClass("animated fadeIn fadeOut fast");
-        }, 800);
-}
+    window.addEventListener('scroll', function (e) {
+        if (isOnScreen(jQuery('.nav-li'))) {
 
-let aboutClicked = true;
-let portfolioClicked = false;
-let contactClicked = false;
+            $("#side-nav").css("display", "none");
+        } else {
+            $("#side-nav").css("display", "inline");
+        }
+    });
 
-$(".about").on("click", function () {
-    $(".about-div").show(1000);
-    $(".story-div").hide(1000);
-    $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
-    resetClasses();
-}); $(".story").on("click", function () {
-    // $(".about-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".about-div").hide(1000);
-    // $(".story-div").css("display", "").addClass("animated fadeIn fast");
-    $(".story-div").show(1000);
-    $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
-    resetClasses();
-}); $(".portfolio").on("click", function () {
-    $(".about-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".story-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".portfolio-div").css("display", "").addClass("animated fadeIn fast");
-    $(".contact-div").css("display", "none").addClass("animated fadeOut fast");
-    resetClasses();
-}); $(".contact").on("click", function () {
-    $(".about-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".story-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".portfolio-div").css("display", "none").addClass("animated fadeOut fast");
-    $(".contact-div").css("display", "").addClass("animated fadeIn fast");
-    resetClasses();
-})
+    // hover effects for links on top
+    $(".nav-li").on("mouseover", function () {
+        $(this).css({
+            "background": "#DFE9F3",
+            "color": "#355E82"
+        });
+    }).on("mouseout", function () {
+        $(this).css({
+            "background": "",
+            "color": "grey"
+        });
+    });
+
+    //anchors
+
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault()
+
+        $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top,
+            },
+            500,
+            'linear'
+        )
+    })
 });
