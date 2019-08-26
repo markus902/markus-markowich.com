@@ -111,6 +111,10 @@ div.story-div {
     padding: 0
 }
 
+h2.coding {
+    width: 100% !important;
+}
+
 div.spacer {
     height: 80vh;
 }
@@ -188,6 +192,34 @@ img.footer-icon {
     left: 0px;
     top: 0px;
     margin: 10px;
+}
+
+/* icons */
+
+/* colors */
+
+i.fa-html52 {
+    color: red
+}
+
+i.fa-css3-alt2 {
+    color: palevioletred;
+}
+
+i.fa-bootstrap2 {
+    color: purple;
+}
+
+i.fa-js2 {
+    color: rgb(242, 223, 19);
+}
+
+i.fa-node-js2 {
+    color: green;
+}
+
+i.fa-react2 {
+    color: blue;
 }
 
 
