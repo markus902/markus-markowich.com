@@ -86,10 +86,6 @@ div.icons {
     margin-top: 7px
 }
 
-div.container {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 div.technology-div {
     background-color: #DFE9F3;
@@ -111,16 +107,23 @@ div.story-div {
     padding: 0
 }
 
-h2.coding {
+#coding {
     width: 100% !important;
+    float: initial;
+    font-size: 1rem;
+    margin: 0;
 }
 
 div.spacer {
     height: 80vh;
 }
 
-h2 {
+h2.skills-h2 {
     float: left;
+}
+
+h2 {
+
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: #355E82;
