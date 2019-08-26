@@ -18,7 +18,7 @@ img {
 }
 
 div.content-row {
-    height: 100vh;
+    height: max-content;
 }
 
 span.nav-li {
@@ -37,6 +37,10 @@ span.nav-li {
 li.nav-li2 {
     color: black;
     margin: 0 15px;
+}
+
+div.home {
+    height: 100vh;
 }
 
 p.paragraph {
