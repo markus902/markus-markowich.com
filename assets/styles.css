@@ -183,7 +183,7 @@ h2 {
     white-space: nowrap;
     position: fixed;
     background-color: #DFE9F3;
-
+z-index: 99;
 }
 
 .skill-list {
