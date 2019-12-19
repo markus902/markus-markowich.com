@@ -21,11 +21,20 @@ $(document).ready(function () {
     }
 
     window.addEventListener('scroll', function (e) {
-        if (isOnScreen(jQuery('.nav-li'))) {
+        if (isOnScreen(jQuery('#top-nav'))) {
 
-            $("#side-nav").css("display", "none");
+            $("#nav").removeClass("top-nav-change").addClass("nav");
         } else {
-            $("#side-nav").css("display", "inline");
+            $("#nav").removeClass("nav").addClass("top-nav-change");
+        }
+    });
+
+    window.addEventListener('scroll', function (e) {
+        if (isOnScreen(jQuery('.skill-list'))) {
+
+            $(".fab").addClass("animated flipInX");
+        } else {
+            $(".fab").removeClass("animated flipInX");
         }
     });
 
@@ -48,8 +57,8 @@ $(document).ready(function () {
         e.preventDefault()
 
         $('html, body').animate({
-                scrollTop: $($(this).attr('href')).offset().top,
-            },
+            scrollTop: $($(this).attr('href')).offset().top,
+        },
             500,
             'linear'
         )
