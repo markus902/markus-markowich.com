@@ -22,40 +22,39 @@
     <link
         href="https://fonts.googleapis.com/css?family=Architects+Daughter|Josefin+Sans:300,400|Montserrat&display=swap"
         rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam|Jomolhari&display=swap" rel="stylesheet">
     <link rel=" stylesheet" href="./assets/styles.css">
     <title>Markus Markowich</title>
 </head>
 
 <body>
 
-    <div id="side-nav">
+    <!-- <div id="side-nav">
         <a href="#skills"> <i class="large material-icons side-icons skills">account_circle</i></a><br>
         <a href="#story"> <i class="large material-icons side-icons story">next_week</i></a><br>
         <a href="#projects"><i class="large material-icons side-icons portfolio">work</i></a><br>
         <a href="#contact"> <i class="large material-icons side-icons contact">email</i></a><br>
-    </div>
+    </div> -->
 
-    <div class="container margin">
-        <div id="nav" class="center-align">
-            <a href="#skills"> <span class="nav-li skills">About</span></a>
-            <a href="#story"> <span class="nav-li mid-nav story">Story</span></a>
-            <a href="#projects"> <span class="nav-li mid-nav portfolio">Projects</span></a>
-            <a href="#contact"> <span class="nav-li contact">Contact</span></a>
+    <div class="container">
+        <div class="row" id="top-nav">
+            <div id="nav" class="center-align">
+                <a href="#skills"> <span class="nav-li skills">About</span></a>
+                <a href="#story"> <span class="nav-li mid-nav story">Story</span></a>
+                <a href="#projects"> <span class="nav-li mid-nav portfolio">Projects</span></a>
+                <a href="#contact"> <span class="nav-li contact">Contact</span></a>
 
 
-            <!-- <ul class="sidenav" id="mobile-demo">
+                <!-- <ul class="sidenav" id="mobile-demo">
             <li class="nav-li2 about">About</li>
             <li class="nav-li2 story">My Story</li>
             <li class=" nav-li2 portfolio">Portfolio</li>
             <li class="nav-li2 contact">Contact</li> -->
-            </ul>
+                </ul>
+            </div>
         </div>
-
-        <div class="row start-div content-row home">
-
+        <div class="row  content-row home">
             <div class="col s12 m12 l12 center">
-
                 <h1 class="">Markus Markowich</h1>
                 <div class="icons">
                     <i class="fab fa-html5"></i>
@@ -69,126 +68,176 @@
             </div>
         </div>
 
-        <div id="skills" class="row center-align content-row technology-div row-full">
+        <div class="row  content-row center-align technology-div">
 
             <div class="col s12 m12 l12">
-                <h2 class="skills-h2">Skills</h2><br>
+                <h2 class="skills-h2">Skills.</h2>
             </div>
-            <h6>Technologies</h6>
+            <!-- <h6>Technologies</h6> -->
             <div class="skill-icons center-align">
-
                 <span> <i class="fab fa-html5 fa-html52 skill-list"></i></span>
                 <span> <i class="fab fa-css3-alt fa-css3-alt2 skill-list"></i></span>
                 <span> <i class="fab fa-bootstrap skill-list"></i></span>
                 <span> <i class="fab fa-js fa-js2 skill-list"></i></span>
                 <span> <i class="fab fa-node-js fa-node-js2 skill-list"></i></span>
                 <span> <i class="fab fa-react fa-react2 skill-list"></i></span>
-
-                <h6>Other than Coding</h6>
-                <span class="skill-list2">Business Development</span>
-                <span class="skill-list2">Customer Experience</span>
-                <span class="skill-list2">Marketing</span>
-                <h6>Education</h6>
-                <span class="skill-list2">MSc.</span>
-                <span class="skill-list2">UNH Fullstack Coding Bootcamp</span>
             </div>
-        </div>
-    </div>
-
-
-    <div id="story" class="row">
-        <!-- <div class="col s12 m12 l12 center-align"> <img class="arrow circle" src="./assets/images/arrow.jpg" alt=""> -->
-
-
-        <div class="col s12 m12 l12 story-div">
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Frontend</span>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                            <li>Materialize</li>
+                            <li>JQuery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Backend</span>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Handlebars</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>React</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="col s12 m12 l12">
-                <h2 class="center-align">Why Coding?</h2><br>
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Work Experience</span>
+                        <ul>
+                            <li>Customer Experience</li>
+                            <li>Business Development</li>
+                            <li>Agriculture</li>
+                            <li></li>
+                            <br>
+                        </ul>
+                        <ul>
+                            <span class="card-title">Education</span>
+                            <li>MSc.</li>
+                            <li>UNH Fullstack Bootcamp</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <p class="paragraph">
-                Thank you Grandpa, for getting up at 6 in the morning to wait in line for two hours at the local
-                grocery discounter to buy my first cutting edge PC which clearly was far from putting it in your
-                pocket and carrying it around. When the store opened they typically had 5 units … Grandpa was
-                number
-                6. This happened in 2004 and was probably the first of many hurdles I had to overcome to pursue
-                a
-                career in web and development. Luckily on the second attempt a couple months later I got my <a
-                    href="https://www.pcwelt.de/produkte/Im-Test-Aldi-PC-Medion-Titanium-MD-8383-XL-390310.html"
-                    target="_blank" class="text_link">Titanium MD 8383 XL</a> and I started teaching myself how
-                to
-                build first simple website, at the time not realising how much I enjoyed it and to make it a
-                career.
-                <br>
-                <br>
-                <img src="./assets/images/arrow.jpg" alt="">
-                <br>
-                <br>
-
-                Instead I did quite a view different things in my life: form working in healthcare to getting a
-                MSc.
-                degree and working in agriculture, ending up in sales and product management for a startup to customer
-                support roles. All of these job provided me with wonderful experiences
-                but
-                never brought back the enjoyment of coding and teaching myself new skills on my old dinosaur
-                Windows
-                XP machine. Realizing, how much sooner I could have found the ideal career for me I started to
-                take
-                action and setting my goal for the year 2020:
-                <br>
-                <br>
-                “I am making websites” - that’s what I want to tell people about me. On this website
-                you
-                can see the first steps towards my goal of become a professional web developer.
-                You should do this! These were my words to my family when I decided to go on my exciting journey
-                to
-                become a developer and to finally start doing for living what I am actually enjoying. The day
-                after,
-                I registered for a coding bootcamp at UNH - and look at me: You’re currently visiting my very
-                first
-                serious project which of course will be a work in progress. Feel free to check out my projects
-                and
-                my development as I move forward.
-            </p>
-        </div>
-    </div>
-
-    <div class="row portfolio-div projects-div">
-        <div class="col s12 m12 l12">
-            <h2 id="projects">Projects</h2><br>
-        </div>
-        <div class="col s12 m12 l12">
-            <h5 id="projects" class="center-align">Collaborative</h5><br>
         </div>
 
-        <div class="container">
-            <div class="row content-row">
+        <div id="story" class="row content-row story-div">
+            <div class="col s12 m12 l12">
+                <h2 class="center-align white-h2 skills-h2">Why Coding?</h2><br>
+            </div>
+            <div>
+                <p class="paragraph">
+                    Web Developer educated in agricultural sciences breaking out of customer service and sales to become
+                    a tech professional. Successfully completed a Full Stack Web Development Program at the University
+                    of New Hampshire, providing skills in HTML, Javascript and CSS. Passionate about improving web order
+                    related processes to reach best outcomes in user experience and revenue growth. Experience in
+                    launching new products and presenting benefits to a wide range of customers. Recognized for team
+                    spirit, dedication and reliability. Assisted with implementation of cloud-based CRM platform while
+                    meeting 100 percent target for customer service metrics in the past 2 years. Technical skills,
+                    fluency in English and German combined with a result-driven attitude make me a valuable addition to
+                    your developer team.
 
-                <!-- <div class="col s12 m6 l4">
+
+
+                    <!-- Thank you Grandpa, for getting up at 6 in the morning to wait in line for two hours at the local
+                    grocery discounter to buy my first cutting edge PC which clearly was far from putting it in your
+                    pocket and carrying it around. When the store opened they typically had 5 units … Grandpa was
+                    number
+                    6. This happened in 2004 and was probably the first of many hurdles I had to overcome to pursue
+                    a
+                    career in web and development. Luckily on the second attempt a couple months later I got my <a
+                        href="https://www.pcwelt.de/produkte/Im-Test-Aldi-PC-Medion-Titanium-MD-8383-XL-390310.html"
+                        target="_blank" class="text_link">Titanium MD 8383 XL</a> and I started teaching myself how
+                    to
+                    build first simple website, at the time not realising how much I enjoyed it and to make it a
+                    career.
+                   
+                    <br>
+                    <br>
+
+                    Instead I did quite a view different things in my life: form working in healthcare to getting a
+                    MSc.
+                    degree and working in agriculture, ending up in sales and product management for a startup to
+                    customer
+                    support roles. All of these job provided me with wonderful experiences
+                    but
+                    never brought back the enjoyment of coding and teaching myself new skills on my old dinosaur
+                    Windows
+                    XP machine. Realizing, how much sooner I could have found the ideal career for me I started to
+                    take
+                    action and setting my goal for the year 2020:
+                    <br>
+                    <br>
+                    “I am making websites” - that’s what I want to tell people about me. On this website
+                    you
+                    can see the first steps towards my goal of become a professional web developer.
+                    You should do this! These were my words to my family when I decided to go on my exciting journey
+                    to
+                    become a developer and to finally start doing for living what I am actually enjoying. The day
+                    after,
+                    I registered for a coding bootcamp at UNH - and look at me: You’re currently visiting my very
+                    first
+                    serious project which of course will be a work in progress. Feel free to check out my projects
+                    and
+                    my development as I move forward. -->
+                </p>
+            </div>
+        </div>
+
+        <div class="row  content-row projects-div">
+            <div class="col s12 m12 l12">
+                <h2 id="projects">Projects.</h2><br>
+            </div>
+            <div class="col s12 m12 l12">
+                <h5 id="projects" class="center-align">Collaborative</h5><br>
+            </div>
+
+            <!-- <div class="container"> -->
+            <div class="row">
+
+                <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/valhalla.png">
+                            <img class="activator" src="./assets/images/stayAlive.png" height="300px">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Valhalla<i
+                            <span class="card-title activator grey-text text-darken-4">Stay Alive<i
                                     class="material-icons right">more_vert</i></span>
-                            <p><a href="https://github.com/professorx00/CriticalCode" target="_blank">View on
+                            <p><a href="https://github.com/markus902/Project_Stay-Alive" target="_blank">View on
                                     Github</a>
                             </p>
-                            <p><a href="https://warm-dusk-48851.herokuapp.com/users/login" target="_blank">View in
+                            <p><a href="https://stay-alive-critical-code.herokuapp.com/" target="_blank">View in
                                     Browser</a>
                             </p>
                         </div>
                         <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Valhalla<i
+                            <span class="card-title grey-text text-darken-4">Stay Alive<i
                                     class="material-icons right">close</i></span>
-                            <p>This projct uses a Materializefront-end to create a Trivia game with timer events.
-                                The
-                                app
-                                utilizes an API to generate questions.
+                            <p>Stay Alive is a personal task manager. Play a zombie game while getting your chores done.
+                                <br><br>Technologies:
                             </p>
+                            <li> React</li>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>Axios</li>
+                            <li>Sequelize</li>
+                            <li>MySQL2</li>
+                            <li>NPM react-chartjs-2</li>
                         </div>
                     </div>
-                </div> -->
-
+                </div>
                 <div class="col s12 m6 l4">
                     <div class="card hoverable">
                         <div class="card-image waves-effect waves-block waves-light">
@@ -197,7 +246,7 @@
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Valhalla<i
                                     class="material-icons right">more_vert</i></span>
-                            <p><a href="https://github.com/professorx00/CriticalCode" target="_blank">View on
+                            <p><a href="https://github.com/markus902/Project_Valhalla" target="_blank">View on
                                     Github</a>
                             </p>
                             <p><a href="https://warm-dusk-48851.herokuapp.com/users/login" target="_blank">View in
@@ -207,8 +256,16 @@
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Valhalla<i
                                     class="material-icons right">close</i></span>
-                            <p>The Valhalla App enables to store all your Dungeons & Dragons characters in the cloud.
+                            <p>The Valhalla App enables you to store all your Dungeons & Dragons characters in the
+                                cloud.
+                                <br><br>Technologies:
                             </p>
+                            <li>AWS</li>
+                            <li>Passport</li>
+                            <li>EJS</li>
+                            <li>Express.js</li>
+                            <li>Sequelize</li>
+                            <li>MySQL2</li>
                         </div>
                     </div>
                 </div>
@@ -220,11 +277,11 @@
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Recipes of the World<i
                                     class="material-icons right">more_vert</i></span>
-                            <p><a href="https://github.com/markus902/UNH-09-Recipes-of-the-World" target="_blank">View
+                            <p><a href="https://github.com/markus902/Project_Recipes-of-the-World" target="_blank">View
                                     on
                                     Github</a>
                             </p>
-                            <p><a href="https://markus902.github.io/UNH-09-Recipes-of-the-World/" target="_blank">View
+                            <p><a href="https://markus902.github.io/Project_Recipes-of-the-World/" target="_blank">View
                                     in
                                     Browser</a>
                             </p>
@@ -232,17 +289,25 @@
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Recipes of the World<i
                                     class="material-icons right">close</i></span>
-                            <p>This app is intended for travellers that want to store vacation memories in form of local
+                            <p>This app is intended for travellers that want to store vacation memories in form of
+                                local
                                 recipes on their account. Recipes of the world suggests local recipes based on your
                                 geolocation which can be stored as favourites.
+                                <br><br>Technologies:
                             </p>
+                            <li>Bootstrap</li>
+                            <li>Geolocation API</li>
+                            <li>Axios</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
+                            <li>Firebase Authentication</li>
                         </div>
                     </div>
                 </div>
 
 
                 <div class="col s12 m12 l12">
-                    <h5 id="projects" class="center-align">Individual</h5><br>
+                    <h5 id="projects-headline2" class="center-align">Individual</h5><br>
                 </div>
 
                 <div class="col s12 m6 l4">
@@ -267,7 +332,13 @@
                                 The
                                 app
                                 utilizes an API to generate questions.
+                                <br><br>Technologies:
                             </p>
+                            <li>Materialize</li>
+                            <li>Timed events</li>
+                            <li>Axios</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
                         </div>
                     </div>
                 </div>
@@ -292,7 +363,13 @@
                             <p>This project uses a Materialize front-end and the Giphy API and local storage to
                                 create a
                                 an application for finding and storing your favorite GIF images.
+                                <br><br>Technologies:
                             </p>
+                            <li>Materialize</li>
+                            <li>Local storage</li>
+                            <li>Axios</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
                         </div>
                     </div>
                 </div>
@@ -302,7 +379,7 @@
                             <img class="activator" src="./assets/images/rockPaperScissors.png" height="300px">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Trivia<i
+                            <span class="card-title activator grey-text text-darken-4">Rock-Paper-Scissors<i
                                     class="material-icons right">more_vert</i></span>
                             <p><a href="https://github.com/markus902/UNH-08-Rock-Paper-Scissors" target="_blank">View on
                                     Github</a></p>
@@ -316,81 +393,60 @@
                                 and
                                 use a
                                 chat function. Tha app uses JQuery with a Bootstrap front-end using animations.
+                                <br><br>Technologies:
                             </p>
+                            <li>Materialize</li>
+                            <li>Firebase database</li>
+                            <li>Moment.js</li>
+                            <li>JavaScript</li>
+                            <li>JQuery</li>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
-        <div id="contact" class="page-footer footer left-align">
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 m6 l6">
-                        <h5 class="white-text">Contact Info</h5>
-                        <p class="grey-text text-lighten-4">Markus Markowich</p>
-                        <p class="grey-text text-lighten-4">39 Cameron Dr.</p>
-                        <p class="grey-text text-lighten-4">Hollis, NH 03049</p>
-                        <p class="grey-text text-lighten-4">603-204-7990</p>
-                        <p class="grey-text text-lighten-4">USA</p>
-                    </div>
-                    <div class="col s12 m6 l6">
-                        <h5 class="white-text">Find me here:</h5>
-                        <span class="">
-                            <a class="grey-text text-lighten-3 footer-icon" href="https://github.com/markus902"
-                                target="_blank"><img class="footer-icon" src="./assets/images/github-logo.png"
-                                    alt=""></a>
-                            <a class="grey-text text-lighten-3 footer-icon"
-                                href="http://www.linkedin.com/in/markus-markowich" target="_blank">
-                                <img class="footer-icon" src="./assets/images/linkedin.png" alt=""></a>
-                            <a class="grey-text text-lighten-3 footer-icon" target="_blank"
-                                href="mailto:markus-markowich@yahoo.com">
-                                <img class="footer-icon" src="./assets/images/envelope.png" alt=""></a>
-                            <a class="grey-text text-lighten-3 footer-icon" target="_blank"
-                                href="https://docs.google.com/document/d/1s75KHGzcPunLLcJ5UWdcfSGgMzOaTJbIFWJS0Lh3cBE/edit?usp=sharing">
-                                <img class="footer-icon" src="./assets/images/document.png" alt=""></a>
-                        </span>
-                    </div>
+    </div>
+    <div id="contact" class="page-footer footer left-align">
+        <div class="container">
+            <div class="row footer">
+                <div class="col s12 m6 l6">
+                    <h5 class="white-text">Contact Info</h5>
+                    <p class="grey-text text-lighten-4">Markus Markowich</p>
+                    <p class="grey-text text-lighten-4">P: +1 603-204-7990</p>
+                    <p class="grey-text text-lighten-4">Hollis, NH</p>
+                    <p class="grey-text text-lighten-4">USA</p>
                 </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container center-align">
-                    © 2019 Markus Markowich
-
+                <div class="col s12 m6 l6">
+                    <h5 class="white-text">Find me here:</h5>
+                    <span class="">
+                        <a class="grey-text text-lighten-3 footer-icon" href="https://github.com/markus902"
+                            target="_blank"><img class="footer-icon" src="./assets/images/github-logo.png" alt=""></a>
+                        <a class="grey-text text-lighten-3 footer-icon"
+                            href="http://www.linkedin.com/in/markus-markowich" target="_blank">
+                            <img class="footer-icon" src="./assets/images/linkedin.png" alt=""></a>
+                        <a class="grey-text text-lighten-3 footer-icon" target="_blank"
+                            href="mailto:markus-markowich@yahoo.com">
+                            <img class="footer-icon" src="./assets/images/envelope.png" alt=""></a>
+                        <a class="grey-text text-lighten-3 footer-icon" target="_blank"
+                            href="https://docs.google.com/document/d/1s75KHGzcPunLLcJ5UWdcfSGgMzOaTJbIFWJS0Lh3cBE/edit?usp=sharing">
+                            <img class="footer-icon" src="./assets/images/document.png" alt=""></a>
+                    </span>
                 </div>
             </div>
         </div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2019 Markus Markowich
+
+            </div>
+        </div>
+    </div>
 
 
 
 
-        <script src="./assets/javascript.js"></script>
+    <script src="./assets/javascript.js"></script>
 
 </body>
 
 </html>
-
-
-
-<!-- <div class="col s12 m6 l4">
-                    <div class="card hoverable">
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/images/wordGuessGame.png">
-                        </div>
-                        <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Word Guessing SE<i
-                                    class="material-icons right">more_vert</i></span>
-                            <p><a href="https://github.com/markus902/UNH-04-Word-Guess-Game" target="_blank">View on
-                                    Github</a></p>
-                            <p><a href="https://markus902.github.io/UNH-04-Word-Guess-Game/" target="_blank">View in
-                                    Browser</a></p>
-                        </div>
-                        <div class="card-reveal">
-                            <span class="card-title grey-text text-darken-4">Word-Guess-Game Simpsons Edition<i
-                                    class="material-icons right">close</i></span>
-                            <p>This is a small project in Vanilla JS using key events with Bootstrap front-end and
-                                incorporation of audio.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
