@@ -23,9 +23,9 @@ $(document).ready(function () {
     window.addEventListener('scroll', function (e) {
         if (isOnScreen(jQuery('#top-nav'))) {
 
-            $("#nav").removeClass("top-nav-change").addClass("nav");
+            $("#nav").removeClass("top-nav-change animated fadeInDown").addClass("nav");
         } else {
-            $("#nav").removeClass("nav").addClass("top-nav-change");
+            $("#nav").removeClass("nav").addClass("top-nav-change animated fadeInDown");
         }
     });
 
