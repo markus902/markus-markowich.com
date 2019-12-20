@@ -13,8 +13,10 @@ img {
 }
 
 p.paragraph {
-    margin: 0;
-    padding: 10%;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+    line-height: 2rem;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -51,6 +53,19 @@ div.paragraph {
     background-color: white;
     width: 100%;
     color: white;
+}
+
+a.story-link{
+    font-size: 1.3rem;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    border: 2px solid #DFE9F3;
+}
+
+a.story-link:hover{
+    color: #355E82;
+    background-color: #DFE9F3;
 }
 
 h3 {
@@ -183,7 +198,7 @@ h2 {
     white-space: nowrap;
     position: fixed;
     background-color: #DFE9F3;
-z-index: 99;
+    z-index: 99;
 }
 
 .skill-list {
@@ -218,6 +233,10 @@ h6 {
 img.footer-icon {
     margin: 20px;
     width: 3rem;
+}
+
+img.me{
+    border-radius: 30px;
 }
 
 #headline2 {
